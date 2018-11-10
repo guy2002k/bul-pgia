@@ -96,7 +96,7 @@ namespace bul_pgia
             {
                 for (int j = 0; j < partnerColors.Length; j++)
                 {
-                    if (i != j && colors[i] != partnerColors[j])
+                    if (i != j && colors[i] == partnerColors[j])
                         counterForPgia++;
                 }
             }

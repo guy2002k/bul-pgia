@@ -100,15 +100,23 @@ namespace bul_pgia
                     }
                     answerIsCorrect = CheckAnswer(colors);
                     nextWord = 0;
-                    for (int i = 0; i < colors.Length; i++)
+                    if (!answerIsCorrect)
                     {
-                        colors[i] = "";
+                        for (int i = 0; i < colors.Length; i++)
+                        {
+                            colors[i] = "";
+                        }
                     }
                 }
 
                 answerIsCorrect = false;
 
                 series = ChangeToSeries(colors);
+
+                for (int i = 0; i < colors.Length; i++)
+                {
+                    colors[i] = "";
+                }
 
                 game.AddGuess(series);
 
