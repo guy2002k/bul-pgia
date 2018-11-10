@@ -1,0 +1,6 @@
+C:\Users\guy2002p\Desktop\pah\bul pgia\bul pgia\bin\Debug\bul pgia.exe.config
+C:\Users\guy2002p\Desktop\pah\bul pgia\bul pgia\bin\Debug\bul pgia.exe
+C:\Users\guy2002p\Desktop\pah\bul pgia\bul pgia\bin\Debug\bul pgia.pdb
+C:\Users\guy2002p\Desktop\pah\bul pgia\bul pgia\obj\Debug\bul pgia.csprojResolveAssemblyReference.cache
+C:\Users\guy2002p\Desktop\pah\bul pgia\bul pgia\obj\Debug\bul pgia.exe
+C:\Users\guy2002p\Desktop\pah\bul pgia\bul pgia\obj\Debug\bul pgia.pdb
