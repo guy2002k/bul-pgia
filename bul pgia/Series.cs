@@ -14,7 +14,7 @@ namespace bul_pgia
         Blue=3,
         Purple=4,
         Red=5,
-
+        black=6// only for null
     }
     class Series
     {
@@ -92,14 +92,27 @@ namespace bul_pgia
         public int PgiaGuess(Colors[] partnerColors)
         {
             int counterForPgia = 0;
+            bool[] sameColorIndex = {false,false,false,false};
             for (int i = 0; i < colors.Length; i++)
             {
                 for (int j = 0; j < partnerColors.Length; j++)
                 {
-                    if (i != j && colors[i] == partnerColors[j])
-                        counterForPgia++;
+                    if (!sameColorIndex[j])
+                    {
+                        if (i == j && colors[i] == partnerColors[j])
+                        {
+                            sameColorIndex[i] = true;
+                            counterForPgia = 0;
+                            break;
+                        }
+                        if (i != j && colors[i] == partnerColors[j])
+                            counterForPgia++;
+                    }
+
                 }
             }
+            if (counterForPgia > 4)
+                counterForPgia = -2;
             return counterForPgia;
         }
 
